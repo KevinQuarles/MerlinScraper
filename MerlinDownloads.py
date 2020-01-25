@@ -57,10 +57,10 @@ for invNum in invNums:
     time.sleep(2)
     emailElem = browser.find_element_by_id('signin_username')
     time.sleep(2)
-    emailElem.send_keys('Ilona.Jackson@concordmusicgroup.com')
+    emailElem.send_keys('username')
     time.sleep(2)
     passwordElem = browser.find_element_by_id('signin_password')
-    passwordElem.send_keys('Concord2017')
+    passwordElem.send_keys('password')
     time.sleep(2)
     signInButtonElem = browser.find_element_by_xpath('/html/body/div[4]/form/table/tfoot/tr/td/input').click()
     time.sleep(5)
@@ -134,8 +134,8 @@ for invNum in invNums:
 # move files, create destination folder and unzip the files
     sourcePath = os.path.abspath('C:\\Users\\' + userName + '\Downloads')
     sourceFiles = os.listdir(sourcePath)
-    os.makedirs(r'\\cmgfs\Shared\Accounting\Consignment Sales\Digital\Wind Up Merlin\\'+ str(year) +'\\' + str(yearMonth) + '\\' +invNum) 
-    destinationPath = os.path.abspath(r'\\cmgfs\Shared\Accounting\Consignment Sales\Digital\Wind Up Merlin\\'+ str(year) +'\\' + str(yearMonth) + '\\' +invNum)
+    os.makedirs(r'\\\Wind Up Merlin\\'+ str(year) +'\\' + str(yearMonth) + '\\' +invNum) 
+    destinationPath = os.path.abspath(r'\\\Wind Up Merlin\\'+ str(year) +'\\' + str(yearMonth) + '\\' +invNum)
 
     fileCount = 0
 
